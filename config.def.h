@@ -93,9 +93,12 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 4;
 
+//get colors from wal
+#include "/home/tim/.cache/wal/colors-wal-st.h"
+
 /* Terminal colors (16 first used in escape sequence) */
-static const char *colorname[] = {
-	/* 8 normal colors */
+/*static const char *colorname[] = {
+	//8 normal colors
 	"black",
 	"red3",
 	"green3",
@@ -105,7 +108,7 @@ static const char *colorname[] = {
 	"cyan3",
 	"gray90",
 
-	/* 8 bright colors */
+	//8 bright colors
 	"gray50",
 	"red",
 	"green",
@@ -117,22 +120,22 @@ static const char *colorname[] = {
 
 	[255] = 0,
 
-	/* more colors can be added after 255 to use with DefaultXX */
+	// more colors can be added after 255 to use with DefaultXX 
 	"#cccccc",
 	"#555555",
-	"gray90", /* default foreground colour */
-	"black", /* default background colour */
-};
+	"gray90", // default foreground colour 
+	"black", //default background colour 
+};*/
 
 
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 258;
-unsigned int defaultbg = 259;
-unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+//unsigned int defaultfg = 258;
+//unsigned int defaultbg = 259;
+//unsigned int defaultcs = 256;
+//static unsigned int defaultrcs = 257;
 
 /*
  * Default shape of cursor
